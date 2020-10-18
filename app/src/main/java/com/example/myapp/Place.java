@@ -17,13 +17,6 @@ public class Place {
         this.textView3 = textView3;
         this.textView4 = textView4;
     }
-public Place(String mPlace, int mImageResourseId, String textView1, String textView3, String textView4) {
-        this.mPlace = mPlace;
-        this.mImageResourseId = mImageResourseId;
-        this.textView1 = textView1;
-        this.textView3 = textView3;
-        this.textView4 = textView4;
-    }
 
 
     public String getmPlace() {

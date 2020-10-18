@@ -12,10 +12,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
 
 public class PlaceAdapter extends ArrayAdapter<Place> {
 
@@ -43,16 +43,16 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         textView2.setPaintFlags(textView2.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG); //эта строка рисует линию вниз текста
 
-
         textView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (textView2 != null){
-                Uri number = Uri.parse("tel:" + currentPlace.textView2);
-                Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
-                getContext().startActivity(callIntent);
-            } }
+                if (textView2 != null) {
+                    Uri number = Uri.parse("tel:" + currentPlace.textView2);
+                    Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
+                    getContext().startActivity(callIntent);
+                }
+            }
         });
 
         TextView text3 = convertView.findViewById(R.id.text3);

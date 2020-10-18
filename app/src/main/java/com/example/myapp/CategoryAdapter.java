@@ -38,7 +38,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
                 return mContext.getString(R.string.mon);
             case 2:
                 return mContext.getString(R.string.par);
-                default:
+            default:
                 return null;
         }
     }
