@@ -113,7 +113,7 @@ public class ParkFragment extends Fragment {
                 if (textt3.getVisibility() == View.VISIBLE) {
                     textt3.setVisibility(View.GONE);
                 } else {
-                    textt3.setVisibility(View.VISIBLE);
+                    textt3.setVisibility(View.GONE);
                 }
 
             }
